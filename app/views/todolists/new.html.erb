@@ -1,0 +1,17 @@
+<h1>AJOUTE MOI UNE TODOLIST</h1>
+<%= form_with model: @todolist do |f| %>
+Titre de la Todolist :
+<br />
+<%= f.text_field :title %>
+<br />
+<br />
+Contenu de la Todolist :
+<br />
+<%= f.text_field :content %>
+<br />
+<br />
+<%= f.submit %>
+<% end %>
+
+<div class="ajax_affichage">
+</div>
